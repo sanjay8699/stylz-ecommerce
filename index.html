@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stylz</title>
+    <!-- brand-icon -->
+    <link rel="shortcut icon" href="handshake-solid.svg">
+
+    <!-- My css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <h1>Stylz <i class="fa-solid fa-handshake"></i></h1>
+
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="collection.html">collections</a></p>
+            <p class="navbar-link"><a href="contact.html">contact</a></p>
+        </div>
+
+        <div class="navbar-menu-toggle" onclick="shownavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <!-- Side navbar -->
+    <div class="side-navbar">
+        <p style="text-align: right" onclick="closenavbar()"><i class="fa-solid fa-xmark"></i></p>
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="index.html">Home</a></p>
+            <p class="side-navbar-link"><a href="collection.html">collections</a></p>
+            <p class="side-navbar-link"><a href="contact.html">contact</a></p>
+        </div>
+    </div>
+    <!-- Header -->
+    <div class="header">
+        <div>
+            <h1>Level up your style</h1>
+            <p>with our stunning collection</p>
+            <button class="headerbtn">Shop Now</button>
+        </div>
+        <div>
+            <img src="./pics/pic2.jpg" class="headerimage">
+        </div>
+    </div>
+    <!--Service Container-->
+    <div class="service-container">
+        <div class="service-container-1">
+            <div>
+                <h2>We provide Best</h2>
+                <h2>Customer Experince</h2>
+            </div>
+            <div>
+                <p>|| We ensure that our customer have the best experince ||</p>
+            </div>
+        </div>
+        <div class="service-container-2">
+            <div>
+                <i class="fa-regular fa-face-smile"></i>
+                <h4>Satisfaction Gaurantee</h4>
+                <p>“Our greatest asset is the customer! Treat each customer as if they are the only one!”
+                </p>
+            </div>
+            <div>
+                <i class="fa-regular fa-face-smile"></i>
+                <h4>New Arrival Everyday</h4>
+                <p>"Got new arrivals, got a reason to smile.New arrivals, new beginnings."
+                </p>
+            </div>
+            <div>
+                <i class="fa-regular fa-face-smile"></i>
+                <h4>Fast & Free Delivery</h4>
+                <p>"Delivering Quality with a Smile.Your Delivery, Our Mission"
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--New Arrival-->
+    <div class="new-arrival">
+        <h2 style="padding: 10px; width: 100%;">New Arrival</h2>
+        <div class="new-arrival-container">
+            <img src="./pics/gray suit.jpg" alt="">
+            <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="new-arrival-container">
+            <img src="./pics/Black and Grey Plaid Long Puff Sleeved Dress.jpg" alt="">
+            <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="new-arrival-container">
+            <img src="./pics/Gothic Off-Shoulder Peplum Top (Red) .jpg" alt="">
+            <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="new-arrival-container">
+            <img src="./pics/dual-color-shirt.jpg" alt="">
+            <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+    <!-- Most wanted-->
+    <div class="new-arrival">
+        <h2 style="padding: 10px; width: 100%;">Most Wanted</h2>
+        <div class="new-arrival-container">
+            <img src="./pics/Annabelle Gradient Pleated Dress.jpg" alt="">
+            <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="new-arrival-container">
+            <img src="./pics/meron suit.jpg" alt="">
+            <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="new-arrival-container">
+            <img src="./pics/puffy hand mid skirt.jpg" alt="">
+            <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="new-arrival-container">
+            <img src="./pics/Chinese Mandarin Tang Jacket _ Spring - Red.jpg" alt="">
+            <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <!-- News -->
+    <div class="news">
+        <h2>Join our News Letter</h2>
+        <p>Signup for our email newsletter to get exclusive discounts and upadates and offers.</p>
+        <div>
+            <input type="text" class="search">
+        </div>
+        <div>
+            <button>Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+    <!--Footer-->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box-1">
+                <h2 class="headingtext">Stylz</h2>
+                <p>Somewhere in Tamilnadu, chennai !</p>
+                <div class="footer-icon-container">
+                    <i class="fa-brands fa-instagram" style="color: #ffff;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #ffff;"></i>
+                    <i class="fa-brands fa-facebook" style="color: #ffff;"></i>
+                </div>
+            </div>
+        </div>
+        <p>@2024stylz.com</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

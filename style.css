@@ -1,0 +1,271 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.navbar-links {
+    display: flex;
+    column-gap: 10px;
+}
+
+.navbar-link a {
+    text-decoration: none;
+    color: #1d232c;
+}
+
+.navbar-link a:hover {
+    text-decoration: underline;
+    color: #1d232c;
+}
+
+.navbar-menu-toggle {
+    display: none;
+}
+
+/* Side Navbar */
+
+.side-navbar {
+    background-color: #1d232c;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 15px;
+    color: white;
+    transition: 2s;
+    z-index: 1;
+}
+
+.side-navbar-link {
+    margin-bottom: 30px;
+}
+
+.side-navbar-link a {
+    text-decoration: none;
+    color: white;
+}
+
+.side-navbar-link a:hover {
+    text-decoration: underline;
+}
+
+/* header */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.headerbtn {
+    background-color: #1d232c;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
+/* Service */
+.service-container {
+    padding: 10px;
+}
+
+.service-container-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-container-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+}
+
+.service-container-2 div {
+    background-color: #f2f4f7;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+/* New arrival , Most wanted */
+.new-arrival {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.new-arrival-container {
+    position: relative;
+    flex-basis: 20%;
+}
+
+.new-arrival button {
+    padding: 10px 8px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    color: #1d232c;
+    border-radius: 10px;
+    border: none;
+}
+
+/* news */
+.news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.news input {
+    padding: 10px;
+    width: 80vw;
+    border: solid black 3px;
+    margin: 10px 0px;
+}
+
+.news button {
+    background-color: #1d232c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    padding: 20px;
+    background-color: #1d232c;
+    color: white;
+}
+
+
+/* products */
+
+.product-section {
+    margin-top: 20px
+}
+
+.product-search {
+    width: 75%;
+    border: solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.product-search input {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.product-search input:focus {
+    outline: none;
+}
+
+.products {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    gap: 10px;
+    
+}
+
+.product-box {
+    text-align: center;
+    flex-basis: 20%;
+}
+
+.product-box img {
+    border-radius: 10px;
+}
+
+/* contact form */
+.contact-form {
+    background-color: #1d232c;
+    height: 100%;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    border-radius: 5px;
+}
+
+.container {
+    padding: 50px 50px;
+}
+
+.container h3 {
+    padding: 10px 0px;
+    color: white
+}
+
+.element,
+.element-message {
+    color: white;
+    padding: 10px 0px;
+}
+
+.element input,
+.element-message input {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.container button {
+    margin: 10px 0px;
+    padding: 5px 15px;
+    border-style: none;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+}
+
+/* Meadia query */
+
+@media screen and (max-width:700px) {
+    .navbar-menu-toggle {
+        display: block;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .headerimage {
+        display: none;
+    }
+
+    .service-container {
+        display: none;
+    }
+
+}
